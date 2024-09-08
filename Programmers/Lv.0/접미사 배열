@@ -1,0 +1,13 @@
+function solution(my_string) {
+    const suffix = [];
+    let startIdx = 0;
+
+    while (startIdx < my_string.length) {
+        suffix.push(my_string.substring(startIdx, my_string.length));
+        startIdx++;
+    };
+
+    return(suffix.sort());
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181909
