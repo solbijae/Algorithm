@@ -1,0 +1,9 @@
+function solution(my_string, s, e) {
+    const start = my_string.substring(0, s);
+    const change = my_string.substring(s, e+1).split('').reverse().join('');
+    const end = my_string.substring(e+1);
+
+    return start + change + end;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181905
