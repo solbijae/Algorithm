@@ -1,0 +1,6 @@
+function solution(myString, pat) {
+    const reg = new RegExp(`(?=${pat})`, "g")
+    return myString.match(reg)?.length || 0;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181871
