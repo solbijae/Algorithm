@@ -1,0 +1,16 @@
+function solution(i, j, k) {
+    var answer = 0;
+    const regExp = new RegExp(k, 'g');
+    
+    while (i <= j) {
+        const matches = i.toString().match(regExp);
+        if (matches) {
+            answer += matches.length;
+        }
+        i++;
+    }
+    
+    return answer;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/120887
