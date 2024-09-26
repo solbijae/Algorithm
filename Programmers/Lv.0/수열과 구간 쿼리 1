@@ -1,0 +1,13 @@
+function solution(arr, queries) {
+    queries.map(query => {
+        const idx1 = query[0];
+        const idix2 = query[1];
+        for (let i=idx1; i<=idix2; i++) {
+            arr[i]++
+        }
+    });
+    
+    return arr;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181883?language=javascript
