@@ -1,0 +1,13 @@
+function solution(n) {
+    let factorial = 1
+    let num = 1;
+    let count = 0;
+    while (factorial <= n) {
+        num++, count++;
+        factorial = factorial * num;
+    }
+    
+    return count;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/120848
