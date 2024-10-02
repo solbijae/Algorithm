@@ -1,0 +1,8 @@
+function solution(arr, queries) {
+    queries.forEach(query => {
+        [arr[query[0]], arr[query[1]]] = [arr[query[1]], arr[query[0]]];
+    });
+    return arr;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181924
