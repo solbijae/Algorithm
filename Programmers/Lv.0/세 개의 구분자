@@ -1,0 +1,6 @@
+function solution(myStr) {
+    let result = myStr.split(/[abc]/).filter(str => str !== '');
+    return result.length > 0 ? result : ["EMPTY"];
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181862
