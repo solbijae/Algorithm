@@ -1,0 +1,12 @@
+function solution(strArr) {
+    const arr = [];
+    arr.push(...strArr.map(string => string.length));
+    const count = arr.reduce((acc, cur) => {
+        acc[cur] = (acc[cur] || 0) + 1;
+        return acc;
+    }, {});
+    
+    return Math.max(...Object.values(count));
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181855
