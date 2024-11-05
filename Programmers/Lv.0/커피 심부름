@@ -1,0 +1,5 @@
+function solution(order) {
+    return order.reduce((acc, val) => acc + (val.includes("cafelatte") ? 5000 : 4500), 0);
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181837
