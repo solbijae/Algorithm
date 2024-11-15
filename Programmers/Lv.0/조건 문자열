@@ -1,0 +1,11 @@
+function solution(ineq, eq, n, m) {
+    const conditions = {
+        '>=': n >= m,
+        '>!': n > m,
+        '<=': n <= m,
+        '<!': n < m
+    };
+    return conditions[ineq + eq] ? 1 : 0;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181934
