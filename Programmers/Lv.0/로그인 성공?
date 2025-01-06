@@ -1,0 +1,12 @@
+function solution(id_pw, db) {
+    const [id, pw] = id_pw;
+    const user = db.find(([db_id, db_pw]) => db_id === id);
+    
+    if (user) {
+        return user[1] === pw ? 'login' : 'wrong pw';
+    } else {
+        return 'fail';
+    }
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/120883
