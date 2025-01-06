@@ -1,0 +1,18 @@
+function solution(arr) {
+    let idx = 0;
+    const sdk = [];
+    
+    for (let i=0; i<arr.length; i++) { 
+        if (i===0) {
+            sdk.push(arr[i])
+        } else if (arr[i] === sdk[sdk.length - 1] && sdk.length !== 0) {
+            sdk.pop();
+        } else {
+            sdk.push(arr[i]);
+        }
+    }
+    
+    return sdk.length === 0 ? [-1] : sdk;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/181859
