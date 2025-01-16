@@ -1,0 +1,6 @@
+function solution(s) {
+    const arr = s.split('');
+    return arr.sort().reverse().join('');
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/12917
