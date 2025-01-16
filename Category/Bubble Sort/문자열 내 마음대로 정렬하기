@@ -1,0 +1,11 @@
+function solution(strings, n) {
+    return strings.sort((a,b) => {
+        if (a[n] != b[n]) {
+            return a[n] > b[n] ? 1 : -1; // 1이면 뒤로 가고, -1이면 앞으로 가는것
+        }
+        
+        return a > b ? 1 : -1; // 같은 알파벳이라면 순서대로
+    });
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/12915
