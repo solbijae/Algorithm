@@ -1,0 +1,14 @@
+function solution(array, commands) {
+    let answer=[];
+    
+    commands.map(val => {
+        const [start, end, idx] = commands;
+        const arr = array.slice(val[start]-1, val[end]).sort((a,b) => a-b);
+        const index = val[idx] - 1;
+        answer.push(arr[index]);
+    });
+    
+    return answer;
+}
+
+// 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/42748
